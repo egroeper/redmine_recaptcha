@@ -14,7 +14,7 @@ install ambethia's recaptcha plugin:
 sudo ruby script/plugin install git://github.com/ambethia/recaptcha.git
 
 install this plugin (if you haven't already):
-sudo ruby script/plugin install (the  url)
+sudo ruby script/plugin install git://github.com/srstclair/redmine_recaptcha.git 
 
 sign up for a recaptcha key at http://www.google.com/recaptcha (if you haven't already)
 
