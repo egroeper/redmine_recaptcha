@@ -11,14 +11,16 @@ To install:
 cd to your redmine directory
 
 install ambethia's recaptcha plugin:
-sudo ruby script/plugin install git://github.com/ambethia/recaptcha.git
+ruby script/plugin install git://github.com/ambethia/recaptcha.git
 
 install this plugin (if you haven't already):
-sudo ruby script/plugin install git://github.com/srstclair/redmine_recaptcha.git 
+ruby script/plugin install git://github.com/srstclair/redmine_recaptcha.git 
 
 sign up for a recaptcha key at http://www.google.com/recaptcha (if you haven't already)
 
-add api keys to redmine's config/environments/production.rb:
+create initializers/recaptcha.rb
+
+edit the file and add the following:
 ENV['RECAPTCHA_PUBLIC_KEY'] = 'yourpublickey'
 ENV['RECAPTCHA_PRIVATE_KEY]' = 'yourprivatekey'
 
