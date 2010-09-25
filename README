@@ -4,7 +4,7 @@ srstclair@gmail.com
 
 Simple Redmine plugin to add a reCAPTCHA to user self registration.
 
-Relies on ambethia's recaptcha for rails plugin
+Relies on ambethia's recaptcha for rails plugin (http://github.com/ambethia/recaptcha/)
 
 To install:
 
