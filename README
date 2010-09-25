@@ -1,0 +1,27 @@
+redmine_recaptcha
+
+srstclair@gmail.com
+
+Simple Redmine plugin to add a reCAPTCHA to user self registration.
+
+Relies on ambethia's recaptcha for rails plugin
+
+To install:
+
+cd to your redmine directory
+
+install ambethia's recaptcha plugin:
+sudo ruby script/plugin install git://github.com/ambethia/recaptcha.git
+
+install this plugin (if you haven't already):
+sudo ruby script/plugin install (the  url)
+
+sign up for a recaptcha key at http://www.google.com/recaptcha (if you haven't already)
+
+add api keys to redmine's config/environments/production.rb:
+ENV['RECAPTCHA_PUBLIC_KEY'] = 'yourpublickey'
+ENV['RECAPTCHA_PRIVATE_KEY]' = 'yourprivatekey'
+
+restart redmine
+
+go to self registration page to see captcha!
