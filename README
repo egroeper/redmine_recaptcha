@@ -22,7 +22,7 @@ create initializers/recaptcha.rb
 
 edit the file and add the following:
 ENV['RECAPTCHA_PUBLIC_KEY'] = 'yourpublickey'
-ENV['RECAPTCHA_PRIVATE_KEY]' = 'yourprivatekey'
+ENV['RECAPTCHA_PRIVATE_KEY'] = 'yourprivatekey'
 
 restart redmine
 
