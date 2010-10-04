@@ -8,6 +8,8 @@ Relies on ambethia's recaptcha for rails plugin (http://github.com/ambethia/reca
 
 To install:
 
+make sure you have git installed!
+
 cd to your redmine directory
 
 install ambethia's recaptcha plugin:
