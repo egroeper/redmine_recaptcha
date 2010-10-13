@@ -20,7 +20,7 @@ ruby script/plugin install git://github.com/srstclair/redmine_recaptcha.git
 
 sign up for a recaptcha key at http://www.google.com/recaptcha (if you haven't already)
 
-create initializers/recaptcha.rb
+create config/initializers/recaptcha.rb
 
 edit the file and add the following:
 ENV['RECAPTCHA_PUBLIC_KEY'] = 'yourpublickey'
