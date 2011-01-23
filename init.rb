@@ -20,5 +20,5 @@ Redmine::Plugin.register :redmine_recaptcha do
   name 'reCAPTCHA for user self registration'
   author 'Shane StClair'
   description 'Adds a recaptcha to the user self registration screen to combat spam'
-  version '0.0.1'
+  version '0.0.2'
 end
