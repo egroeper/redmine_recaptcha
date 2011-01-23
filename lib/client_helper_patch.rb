@@ -10,7 +10,8 @@ module ClientHelperPatch
     def recaptcha_tags_with_flash_remove(options={})
       html = recaptcha_tags_without_flash_remove( options )
       flash.delete( :recaptcha_error )
-      return html 
+      #used to be return html for 0.9 versions. fix identified by Christophe Bourcier (http://www.redmine.org/issues/675#note-32)
+      return html.html_safe
     end
   end
 end
