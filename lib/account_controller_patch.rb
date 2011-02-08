@@ -31,7 +31,7 @@ module AccountControllerPatch
         else
           @user.login = params[:user][:login]
           @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
-          if verify_recaptcha( :model => @user, :message => "There was an error with the recaptcha code below. Please re-enter the code and click submit." )
+          if verify_recaptcha( :private_key => Setting.plugin_redmine_recaptcha['recaptcha_private_key'], :model => @user, :message => "There was an error with the recaptcha code below. Please re-enter the code and click submit." )
             case Setting.self_registration
             when '1'
               register_by_email_activation(@user)

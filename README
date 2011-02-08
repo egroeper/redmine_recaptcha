@@ -18,14 +18,14 @@ ruby script/plugin install git://github.com/ambethia/recaptcha.git
 install this plugin (if you haven't already):
 ruby script/plugin install git://github.com/srstclair/redmine_recaptcha.git 
 
+restart redmine
+
+sign in as an administrator
+
+go to Administration/Plugins/reCAPTCHA/Configure
+
 sign up for a recaptcha key at http://www.google.com/recaptcha (if you haven't already)
 
-create config/initializers/recaptcha.rb
-
-edit the file and add the following:
-ENV['RECAPTCHA_PUBLIC_KEY'] = 'yourpublickey'
-ENV['RECAPTCHA_PRIVATE_KEY'] = 'yourprivatekey'
-
-restart redmine
+enter your public and private recaptcha keys
 
 go to self registration page to see captcha!

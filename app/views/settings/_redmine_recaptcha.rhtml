@@ -1,0 +1,13 @@
+<table>
+	<tr>
+		<td colspan="2">Sign up for a <a href="http://www.google.com/recaptcha">reCAPTCHA</a> account, then set keys below.</td>
+	</tr>
+	<tr>
+		<td>Private Key</td>
+		<td><%= text_field_tag("settings[recaptcha_private_key]", @settings['recaptcha_private_key'], :size => 52 ) %></td>
+	</tr>
+	<tr>
+		<td>Public Key</td>
+		<td><%= text_field_tag("settings[recaptcha_public_key]", @settings['recaptcha_public_key'], :size => 52 ) %></td>
+	</tr>
+</table>

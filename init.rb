@@ -20,5 +20,13 @@ Redmine::Plugin.register :redmine_recaptcha do
   name 'reCAPTCHA for user self registration'
   author 'Shane StClair'
   description 'Adds a recaptcha to the user self registration screen to combat spam'
-  version '0.0.2'
+  version '0.1.0'
+  url 'http://github.com/srstclair/redmine_recaptcha'
+  #requires_redmine :version_or_higher => '0.9.0'
+  settings :default => {
+     'recaptcha_private_key' => '',
+     'recaptcha_public_key' => ''
+  }, :partial => 'settings/redmine_recaptcha'
+
 end
+
