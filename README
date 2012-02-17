@@ -12,9 +12,17 @@ make sure you have git installed!
 
 cd to your Redmine/ChiliProject directory
 
-install this plugin:
+
+
+install the plugin (for Redmine users):
+sudo ruby script/plugin install git://github.com/ambethia/recaptcha.git
+sudo ruby script/plugin install git://github.com/srstclair/redmine_recaptcha.git 
+
+OR install the plugin (for Chiliproject users):
 sudo ruby script/plugin install git://github.com/srstclair/redmine_recaptcha.git 
 sudo bundle install
+
+
 
 restart Redmine/ChiliProject
 
