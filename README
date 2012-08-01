@@ -1,8 +1,9 @@
 redmine_recaptcha
 
-srstclair@gmail.com
+enno+redmine_recaptcha@groeper-berlin.de
 
-Simple Redmine/ChiliProject plugin to add a reCAPTCHA to user self registration.
+Fork of Shane StClairs Redmine/ChiliProject plugin to add a reCAPTCHA to user self registration.
+This fork also adds a captcha when creating or modifying issues as anonymous.
 
 Relies on ambethia's recaptcha for rails plugin (http://github.com/ambethia/recaptcha/)
 
@@ -16,10 +17,10 @@ cd to your Redmine/ChiliProject directory
 
 install the plugin (for Redmine users):
 sudo ruby script/plugin install git://github.com/ambethia/recaptcha.git
-sudo ruby script/plugin install git://github.com/srstclair/redmine_recaptcha.git 
+sudo ruby script/plugin install git://github.com/egroeper/redmine_recaptcha.git 
 
 OR install the plugin (for Chiliproject users):
-sudo ruby script/plugin install git://github.com/srstclair/redmine_recaptcha.git 
+sudo ruby script/plugin install git://github.com/egroeper/redmine_recaptcha.git 
 sudo bundle install
 
 
@@ -34,4 +35,4 @@ sign up for a recaptcha key at http://www.google.com/recaptcha (if you haven't a
 
 enter your public and private recaptcha keys
 
-go to self registration page to see captcha!
+go to self registration page or edit / create an issue as anonymous to see the captcha!
